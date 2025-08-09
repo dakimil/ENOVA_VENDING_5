@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Log aktivnosti</title>
+    <style>
+        body {
+            margin-right: 220px;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 30px;
+        }
+
+        .log-container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+            padding: 20px;
+            font-size: 14px;
+            color: #333;
+            white-space: pre-wrap;
+            line-height: 1.5;
+            overflow-y: auto;
+            max-height: 600px;
+        }
+
+        /* Desni meni */
+        .meni {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #f8f8f8;
+            border-left: 2px solid #ccc;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .meni a {
+            background: #1976d2;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .meni a:hover {
+            background: #125ca0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Desni meni -->
+<div class="meni">
+    <a href="/">Početna</a>
+    <a href="/admin">Admin</a>
+    <a href="/dodaj">Dodaj Artikal</a>
+    <a href="/izvestaj">Izveštaj</a>
+    <a href="/servis5">Servis</a>
+    <a href="/log">Log</a>
+    <a href="/rezerva">Rezervna</a>
+</div>
+
+<h1>Log aktivnosti</h1>
+
+<div class="log-container">
+    {{ sadrzaj }}
+</div>
+
+</body>
+</html>

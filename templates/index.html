@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<title>ENOVA Vending</title>
+			<style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            margin: 0;
+            padding: 0;
+        }
+
+        .scroll-izaberi {
+            width: 278px;
+            position: absolute;
+            top: 12px;
+            left: 20px;
+            background: #e0f0ff;
+            border: 2px solid #ccc;
+            padding: 8px 14px;
+            border-radius: 10px;
+            animation: blink 5s ease-in-out infinite;
+            display: inline-block;
+        }
+
+        .scroll-izaberi span {
+            font-size: 17px;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.30; }
+        }
+
+        .lang-selector {
+            position: fixed;
+            top: 10px;
+            right: 260px;
+            display: flex;
+            gap: 12px;
+            z-index: 9999;
+        }
+
+        .lang-selector img {
+            width: 42px;
+            height: 30px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            transition: transform 0.2s, border 0.2s;
+        }
+
+        .lang-selector img:hover {
+            transform: scale(1.1);
+            border-color: #1976d2;
+        }
+
+        .lang-msg-global {
+            position: absolute;
+            top: 52px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #e3f2fd;
+            padding: 6px 16px;
+            border: 1px solid #90caf9;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #1565c0;
+            z-index: 9999;
+            box-shadow: 0 0 6px rgba(0,0,0,0.1);
+        }
+
+        .flash-msg {
+            text-align: center;
+            padding: 12px;
+            margin: 10px auto;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 17px;
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .video-reklama {
+			width: 586px;                /* Fiksna širina videa: 640 piksela */
+			margin: 20px auto 0 auto;  	/* ➤ Gornja margina 20px, leva margina 20px, ostale 0 */
+			display: block;              /* Element se ponaša kao blok (da bi centriranje radilo) */
+			border-radius: 12px;         /* Zaobljeni uglovi videa – 12 piksela */
+			box-shadow: 0 2px 12px rgba(0,0,0,0.15);  /* Blaga senka ispod videa za 3D efekat */
+		}
+
+        .wrapper {
+            margin-right: 220px;
+       
+	   }
+		.grid {
+			display: flex;                  /* Aktivira flexbox sistem za raspored elemenata */
+			flex-wrap: wrap;               /* Dozvoljava da se elementi prelamaju u novi red ako nema mesta */
+			justify-content: flex-start;   /* Poravnava slotove ulevo, bez centriranja */
+			gap: 30px;                     /* Razmak između slotova/artikala po horizontali i vertikali */
+			padding: 20px;                 /* Unutrašnji razmak od ivice kontejnera */
+		}
+
+       .kartica {
+			background: #fff;              /* Pozadina kartice je bela */
+			border-radius: 14px;           /* Zaobljeni uglovi kartice */
+			box-shadow: 0 2px 10px #c4c4c4;/* Blaga senka ispod kartice za 3D efekat */
+			padding: 18px;                 /* Unutrašnji razmak između ivice kartice i sadržaja */
+			width: 278px;                  /* Fiksna širina kartice (odgovara slici, dugmetu itd.) */
+			display: flex;                 /* Aktivira flexbox za sadržaj unutar kartice */
+			flex-direction: column;       /* Sadržaj se raspoređuje odozgo nadole (slika, ime, cena, dugme) */
+			align-items: center;          /* Poravnava sve unutar kartice na sredinu po horizontali */
+		}
+
+       .kartica img {
+			width: 68px;                    /* Širina slike artikla */
+			height: 106px;                  /* Visina slike artikla */
+			object-fit: contain;           /* Slika se uklapa unutar zadatih dimenzija bez izobličenja */
+			margin-bottom: 10px;           /* Razmak ispod slike (pre imena artikla) */
+		}
+
+       
+		.kartica h3 {
+			margin: 6px 0 4px 0;           /* Gornji i donji razmak oko naslova (manji razmaci) */
+			font-size: 18px;               /* Veličina slova naslova */
+			color: #111;                   /* Tamno siva (skoro crna) boja naslova */
+		}
+
+        .kartica p {
+			margin: 0 0 10px 0;            /* Samo donji razmak (10px) između redova teksta */
+			color: #444;                   /* Srednje siva boja teksta */
+			font-size: 16px;               /* Veličina slova opisa (npr. cena) */
+		}
+
+       .kartica button {
+			width: 100%;                   /* Dugme zauzima celu širinu kartice */
+			background: #2196f3;          /* Plava pozadina dugmeta */
+			color: white;                 /* Belo slovo na dugmetu */
+			font-size: 16px;              /* Veličina teksta u dugmetu */
+			padding: 8px 0;               /* Vertikalni razmak unutar dugmeta (gore/dole), horizontalni = 0 */
+			border: none;                 /* Nema okvira oko dugmeta */
+			border-radius: 7px;           /* Zaobljeni uglovi dugmeta */
+			cursor: pointer;              /* Pokazivač se pretvara u ruku kada pređeš mišem preko dugmeta */
+			transition: background 0.2s;  /* Animacija boje pozadine kada pređeš mišem */
+		}
+
+
+        .kartica button:disabled {
+            background: #ccc;
+            color: #666;
+            cursor: not-allowed;
+        }
+
+       .kartica button:hover:not(:disabled) {
+    background: #1766a0;          /* Tamnija plava kada se mišem pređe preko aktivnog dugmeta */
+}
+
+        .meni {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #f8f8f8;
+            border-left: 2px solid #ccc;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .meni a {
+            background: #1976d2;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .meni a:hover { background: #125ca0; }
+			</style>
+		</head>
+		<body>
+
+        <!-- promena stranice -->
+            <script>
+                document.body.addEventListener("keydown", (ev) => {
+                    if(ev.key == "h"){
+                        console.log("Promena stranice")
+
+                        window.location.href = 'login';
+                    }
+                });
+            </script>
+			<div class="scroll-izaberi">
+				<span>{{ poruke.izaberi }}</span>
+			</div>
+			<div class="lang-selector">
+				<form method="post" action="/lang/sr">
+					<button>
+						<img src="/static/zastave/sr.png" alt="SR"/>
+                    </button>
+                </form>
+                <form method="post" action="/lang/de">
+						<button>
+							<img src="/static/zastave/de.png" alt="DE"/>
+                        </button>
+                </form>
+                <form method="post" action="/lang/en">
+                    <button>
+                        <img src="/static/zastave/en.png" alt="EN"/>
+                    </button>
+                </form>
+            </div>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+      <div id="lang-msg-box" class="lang-msg-global">
+        {{ poruke.jezik_promenjen }}
+      </div>
+
+      <script>
+        setTimeout(() => {
+            const el = document.getElementById("lang-msg-box");
+            if (el) el.style.display = "none";
+        }, 4000);
+      </script>
+  {% endif %}
+{% endwith %}
+
+            <!-- VIDEO REKLAMA -->
+            <video class="video-reklama" autoplay muted loop playsinline>
+                <source src="/static/video/reklama.mp4" type="video/mp4">
+                Vaš browser ne podržava video tag.
+						</video>
+						
+						<div class="wrapper">
+							<div class="grid">
+        {% for artikal in artikli %}
+            {% set i = loop.index0 %}
+            {% set stanje = artikal.zaduzeno - artikal.prodato %}
+								<div class="kartica">
+									<img src="{{ url_for('static', filename='slike/' + artikal.slika) }}" onerror="this.src='{{ url_for('static', filename='slike/default.jpg') }}'">
+										<h3>{{ artikal.naziv }}</h3>
+										<p>{{ artikal.cena }} &euro;</p>
+										<p>
+											<strong>{{ poruke.stanje }}</strong>: {{ stanje }}</p>
+
+                {% if stanje > 0 %}
+										<form id="forma{{ i }}" method="post" action="/kupi/{{ i }}">
+                        {% if artikal.plus18 %}
+											<button type="button" onclick="prikaziVerifikaciju({{ i }})">{{ poruke.kupi18 }}</button>
+                        {% else %}
+											<button type="submit">{{ poruke.kupi }}</button>
+                        {% endif %}
+										</form>
+                {% else %}
+										<button disabled>{{ poruke.nema }}< button> {% endif %}</button>
+									</div>
+        {% endfor %}
+								</div>
+							</div>
+							<div style="text-align:center;">
+								<div id="verifikacija-warning" class="flash-msg" style="display:none; background:#f8d7da; color:#721c24; border-color:#f5c6cb;">
+        {{ poruke.verifikacija_potrebna }}
+								</div>
+								<button id="verifikuj-btn" onclick="potvrdiVerifikaciju()" style="display:none; margin: 10px auto;">{{ poruke.verifikuj }}</button>
+								<button id="nazad-btn" onclick="sakrijVerifikaciju()" style="display:none; margin: 10px auto;">↩ {{ poruke.nazad }}</button>
+							</div>
+
+{% if poruka_audio %}
+							<audio autoplay>
+							<source src="/{{ poruka_audio }}" type="audio/mpeg">
+							</audio>
+{% endif %}
+
+							<script>
+    let aktivniSlot = null;
+    function prikaziVerifikaciju(id) {
+        aktivniSlot = id;
+        document.getElementById('verifikacija-warning').style.display = 'block';
+        document.getElementById('verifikuj-btn').style.display = 'inline-block';
+        document.getElementById('nazad-btn').style.display = 'inline-block';
+    }
+
+    function sakrijVerifikaciju() {
+        aktivniSlot = null;
+        document.getElementById('verifikacija-warning').style.display = 'none';
+        document.getElementById('verifikuj-btn').style.display = 'none';
+        document.getElementById('nazad-btn').style.display = 'none';
+    }
+
+    function potvrdiVerifikaciju() {
+        fetch("/verifikuj", { method: 'POST' }).then(() => {
+            if (aktivniSlot !== null) {
+                document.getElementById('forma' + aktivniSlot).submit();
+            }
+        });
+    }
+
+    setTimeout(() => { window.location.reload(); }, 15000);
+               </script>
+        </body>
+</html>

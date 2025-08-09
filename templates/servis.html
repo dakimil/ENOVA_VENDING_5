@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <title>SERVIS PANEL</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f6f8fa; text-align: center; }
+        h1 { margin: 34px 0 20px 0;}
+        .slotovi { display: flex; flex-wrap: wrap; justify-content: center; gap: 34px 28px; }
+        .slot { background: #fff; border-radius: 14px; box-shadow: 2px 2px 9px #eee; padding: 22px 10px 12px 10px; min-width: 170px; }
+        .slot img { width: 70px; height: 70px; margin-bottom: 7px; border-radius: 9px; background: #eee;}
+        .slot label { font-size: 16px; margin-top: 8px; display: block;}
+        .slot input[type="checkbox"] { width: 18px; height: 18px; }
+        .btn { margin-top: 24px; padding: 10px 34px; font-size: 18px; border-radius: 8px; background: #2691ff; color: #fff; border: none;}
+        .btn:hover { background: #136ad5; }
+        .sivi-slot { filter: grayscale(1); opacity: 0.53; }
+        .msg { margin-top:18px; color:green;}
+    </style>
+</head>
+<body>
+    <h1>SERVISNI PANEL (Aktivacija slotova)</h1>
+    <form method="post">
+        <div class="slotovi">
+            {% for artikal in artikli %}
+            <div class="slot {% if not artikal.aktivan %}sivi-slot{% endif %}">
+                <div style="font-weight:bold; color:#2877b7; margin-bottom:3px;">Slot {{ loop.index }}</div>
+                {% if artikal.slika %}
+                    <img src="{{ url_for('static', filename='slike/' + artikal.slika) }}" alt="">
+                {% else %}
+                    <img src="{{ url_for('static', filename='slike/noimg.png') }}" alt="">
+                {% endif %}
+                <div>{{ artikal.naziv or "Prazno" }}</div>
+                <label>
+                    <input type="checkbox" name="aktivan{{ loop.index0 }}" {% if artikal.aktivan %}checked{% endif %}>
+                    Aktivan
+                </label>
+            </div>
+            {% endfor %}
+        </div>
+        <button type="submit" class="btn">Sačuvaj status slotova</button>
+    </form>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="msg">
+        {% for category, message in messages %}
+          {{ message }}
+        {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+    <br>
+    <a href="/" style="font-size:17px; color:#2691ff;">&#8592; Nazad na prodaju</a>
+</body>
+</html>

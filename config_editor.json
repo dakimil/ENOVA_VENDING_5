@@ -1,0 +1,5 @@
+{
+  "slot_1": { "x": 100, "y": 200, "width": 150, "height": 180, "visible": true },
+  "slika_3": { "x": 400, "y": 100, "width": 300, "height": 200, "as_background": false },
+  "tekst_1": { "x": 250, "y": 50, "fontSize": 24, "fontFamily": "Arial", "color": "#000000", "text": "Dobrodošli!" }
+}

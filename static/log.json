@@ -1,0 +1,74 @@
+[
+  {
+    "datum": "2025-07-20 14:10",
+    "tip": "dopuna",
+    "slot": 0,
+    "artikl": "Fanta",
+    "kolicina": 10,
+    "cena": 2.0,
+    "ukupno": 20.0
+  },
+  {
+    "datum": "2025-07-20 14:15",
+    "tip": "prodaja",
+    "slot": 0,
+    "artikl": "Fanta",
+    "kolicina": 1,
+    "cena": 2.0,
+    "ukupno": 2.0
+  },
+  {
+    "datum": "2025-07-20 14:18",
+    "tip": "prodaja",
+    "slot": 1,
+    "artikl": "PIVO",
+    "kolicina": 1,
+    "cena": 2.0,
+    "ukupno": 2.0
+  },
+  {
+    "datum": "2025-07-20 14:22",
+    "tip": "dopuna",
+    "slot": 4,
+    "artikl": "Pivo",
+    "kolicina": 5,
+    "cena": 0.5,
+    "ukupno": 2.5
+  },
+  {
+    "datum": "2025-07-20 14:25",
+    "tip": "prodaja",
+    "slot": 4,
+    "artikl": "Pivo",
+    "kolicina": 1,
+    "cena": 0.5,
+    "ukupno": 0.5
+  },
+  {
+    "datum": "2025-07-20 14:30",
+    "tip": "prodaja",
+    "slot": 6,
+    "artikl": "Campari",
+    "kolicina": 1,
+    "cena": 0.5,
+    "ukupno": 0.5
+  },
+  {
+    "datum": "2025-07-20 14:32",
+    "tip": "dopuna",
+    "slot": 2,
+    "artikl": "Chokolade",
+    "kolicina": 7,
+    "cena": 1.0,
+    "ukupno": 7.0
+  },
+  {
+    "datum": "2025-07-20 14:35",
+    "tip": "prodaja",
+    "slot": 2,
+    "artikl": "Chokolade",
+    "kolicina": 2,
+    "cena": 1.0,
+    "ukupno": 2.0
+  }
+]

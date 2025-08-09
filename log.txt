@@ -1,0 +1,638 @@
+[2025-07-21 00:25:08.482374] Kupljen artikal: Fanta
+[2025-07-21 00:25:09.471137] Kupljen artikal: PIVO
+[2025-07-21 00:25:10.570966] Kupljen artikal: Chokolade
+[2025-07-21 00:25:11.570900] Kupljen artikal: Coko
+[2025-07-21 00:25:12.507093] Kupljen artikal: Pivo
+[2025-07-21 00:25:13.287769] Kupljen artikal: Sokovi
+[2025-07-21 00:25:16.883034] Kupljen artikal: Orangine
+[2025-07-21 00:25:55.841236] Ažurirani artikli preko admin panela.
+[2025-07-21 00:48:27.199820] Kupljen artikal: Orangine
+[2025-07-21 00:48:32.107290] Kupljen artikal: Orangine
+[2025-07-21 00:48:37.626405] Kupljen artikal: PIVO
+[2025-07-21 00:48:42.217570] Kupljen artikal: Coko
+[2025-07-21 00:48:48.191048] Kupljen artikal: Pivo
+[2025-07-21 00:51:59.204265] Kupljen artikal: Chokolade
+[2025-07-21 00:52:00.236413] Kupljen artikal: Coko
+[2025-07-21 00:52:02.303820] Kupljen artikal: Sokovi
+[2025-07-21 00:52:03.395806] Kupljen artikal: Orangine
+[2025-07-21 01:03:04.596783] Kupljen artikal: Pivo
+[2025-07-21 01:20:16.883950] Kupljen artikal: Pivo
+[2025-07-21 01:39:40.113708] Kupljen artikal: Sokovi
+[2025-07-21 01:40:12.316877] Kupljen artikal: Sokovi
+[2025-07-21 01:40:16.668747] Kupljen artikal: Chokolade
+[2025-07-21 01:40:20.633563] Kupljen artikal: Fanta
+[2025-07-21 01:41:42.455680] Ažurirani artikli preko admin panela.
+[2025-07-21 01:41:47.338766] Ažurirani artikli preko admin panela.
+[2025-07-21 01:41:56.647938] Kupljen artikal: Fanta
+[2025-07-21 01:57:28.629727] Ažurirani artikli preko admin panela.
+[2025-07-21 01:57:39.752283] Kupljen artikal: Fanta
+[2025-07-21 01:57:58.794956] Kupljen artikal: Fanta
+[2025-07-21 01:58:04.004586] Kupljen artikal: Fanta
+[2025-07-21 01:58:19.448242] Kupljen artikal: PIVO
+[2025-07-21 01:58:21.445747] Kupljen artikal: PIVO
+[2025-07-21 11:04:49.752865] Kupljen artikal: Chokolade
+[2025-07-21 11:04:50.806967] Kupljen artikal: PIVO
+[2025-07-21 11:04:55.884027] Kupljen artikal: PIVO
+[2025-07-21 11:04:57.548797] Kupljen artikal: Chokolade
+[2025-07-21 11:04:59.136414] Kupljen artikal: Coko
+[2025-07-21 11:05:00.850566] Kupljen artikal: Pivo
+[2025-07-21 11:05:01.695401] Kupljen artikal: Sokovi
+[2025-07-21 11:06:51.636285] Kupljen artikal: Fanta
+[2025-07-21 11:06:53.610256] Kupljen artikal: PIVO
+[2025-07-21 11:17:46.187163] Kupljen artikal: PIVO
+[2025-07-21 11:17:51.730799] Kupljen artikal: PIVO
+[2025-07-21 11:17:55.485702] Kupljen artikal: PIVO
+[2025-07-21 11:17:58.989063] Kupljen artikal: Chokolade
+[2025-07-21 11:18:05.442901] Kupljen artikal: Chokolade
+[2025-07-21 11:18:07.974799] Kupljen artikal: Coko
+[2025-07-21 11:18:08.903323] Kupljen artikal: Pivo
+[2025-07-21 11:18:40.154432] Ažurirani artikli preko admin panela.
+[2025-07-21 11:18:54.458145] Ažurirani artikli preko admin panela.
+[2025-07-21 11:19:07.018715] Kupljen artikal: Fanta
+[2025-07-21 11:20:31.048947] Kupljen artikal: PIVO
+[2025-07-21 11:20:33.816753] Kupljen artikal: PIVO
+[2025-07-21 11:20:46.216948] Kupljen artikal: PIVO
+[2025-07-21 11:21:01.816860] Kupljen artikal: PIVO
+[2025-07-21 11:52:21.810679] Kupljen artikal: PIVO
+[2025-07-21 11:52:25.120558] Kupljen artikal: Coko
+[2025-07-21 11:52:59.632607] Ažurirani artikli preko admin panela.
+[2025-07-21 11:53:09.096828] Kupljen artikal: PIVO
+[2025-07-21 11:53:11.244560] Kupljen artikal: PIVO
+[2025-07-21 11:53:13.455256] Kupljen artikal: PIVO
+[2025-07-21 11:53:14.922990] Kupljen artikal: Chokolade
+[2025-07-21 11:53:16.271580] Kupljen artikal: Coko
+[2025-07-21 11:53:17.867909] Kupljen artikal: Pivo
+[2025-07-21 11:53:25.852267] Kupljen artikal: Fanta
+[2025-07-21 11:58:44.158597] Kupljen artikal: PIVO
+[2025-07-21 11:58:47.761958] Kupljen artikal: PIVO
+[2025-07-21 11:59:11.666048] Kupljen artikal: Sokovi
+[2025-07-21 18:38:30.685730] Kupljen artikal: PIVO
+[2025-07-21 18:38:50.542137] Kupljen artikal: Chokolade
+[2025-07-21 18:38:53.841188] Kupljen artikal: Chokolade
+[2025-07-21 18:39:17.211763] Kupljen artikal: Coko
+[2025-07-21 18:39:22.990626] Kupljen artikal: Coko
+[2025-07-21 18:39:25.601559] Kupljen artikal: Coko
+[2025-07-21 18:39:29.043624] Kupljen artikal: Pivo
+[2025-07-21 18:39:42.276401] Kupljen artikal: Sokovi
+[2025-07-21 18:39:54.966254] Kupljen artikal: Sokovi
+[2025-07-21 18:40:18.046517] Kupljen artikal: Orangine
+[2025-07-21 18:40:25.901359] Kupljen artikal: Orangine
+[2025-07-21 18:40:49.342716] Ažurirani artikli preko admin panela.
+[2025-07-21 18:42:56.441828] Kupljen artikal: Campari
+[2025-07-21 18:43:18.584754] Kupljen artikal: PIVO
+[2025-07-21 18:43:25.931302] Kupljen artikal: PIVO
+[2025-07-21 18:43:29.296841] Kupljen artikal: PIVO
+[2025-07-21 18:45:08.705147] Dodat novi artikal: stam
+[2025-07-21 18:45:41.134295] Ažurirani artikli preko admin panela.
+[2025-07-21 18:46:27.897465] Ažurirani artikli preko admin panela.
+[2025-07-21 18:47:44.506345] Ažurirani artikli preko admin panela.
+[2025-07-21 18:48:08.239950] Kupljen artikal: Fanta
+[2025-07-21 18:48:18.510324] Kupljen artikal: Chokolade
+[2025-07-21 20:21:03.998403] Kupljen artikal: Pivo
+[2025-07-21 20:21:05.429701] Kupljen artikal: Sokovi
+[2025-07-21 20:21:06.835724] Kupljen artikal: Orangine
+[2025-07-21 20:21:25.303369] Kupljen artikal: Sokovi
+[2025-07-21 20:21:26.589912] Kupljen artikal: Sokovi
+[2025-07-21 20:21:29.413721] Kupljen artikal: Pivo
+[2025-07-21 20:22:28.011794] Kupljen artikal: Chokolade
+[2025-07-21 22:24:55.087173] Kupljen artikal: Chokolade
+[2025-07-21 22:24:59.062479] Kupljen artikal: Coko
+[2025-07-21 22:25:00.853787] Kupljen artikal: Coko
+[2025-07-21 22:25:01.518971] Kupljen artikal: Coko
+[2025-07-21 22:25:02.904661] Kupljen artikal: Coko
+[2025-07-21 22:25:05.584059] Kupljen artikal: Pivo
+[2025-07-21 22:25:22.878318] Ažurirani artikli preko admin panela.
+[2025-07-21 22:25:43.011130] Ažurirani artikli preko admin panela.
+[2025-07-21 22:25:49.369034] Kupljen artikal: Coko
+[2025-07-21 22:26:12.785575] Kupljen artikal: Fanta
+[2025-07-21 22:26:34.265124] Kupljen artikal: Fanta
+[2025-07-21 22:59:19.265543] Ažurirani artikli preko admin panela.
+[2025-07-21 23:17:07.012367] Kupljen artikal: Fanta
+[2025-07-21 23:21:56.132626] Oduzeto 1 komada iz: Fanta
+[2025-07-21 23:22:01.104058] Oduzeto 1 komada iz: PIVO
+[2025-07-21 23:23:35.264404] Dodat novi artikal: qq
+[2025-07-21 23:37:36.279134] Obrisan artikal: Fanta
+[2025-07-21 23:37:37.961247] Obrisan artikal: PIVO
+[2025-07-21 23:37:38.504612] Obrisan artikal: Chokolade
+[2025-07-21 23:37:39.466907] Obrisan artikal: Coko
+[2025-07-21 23:37:39.745300] Obrisan artikal: Pivo
+[2025-07-21 23:37:40.047882] Obrisan artikal: Sokovi
+[2025-07-21 23:37:40.387046] Obrisan artikal: Campari
+[2025-07-21 23:37:40.764800] Obrisan artikal: Orangine
+[2025-07-21 23:37:42.596038] Obrisan artikal: stam
+[2025-07-21 23:37:43.206466] Obrisan artikal: stam
+[2025-07-21 23:37:43.525165] Obrisan artikal: qq
+[2025-07-21 23:38:55.557397] Dodat novi artikal: q
+[2025-07-21 23:39:13.323540] Obrisan artikal: q
+[2025-07-21 23:42:40.349104] Dodat novi artikal: 1
+[2025-07-21 23:43:16.846260] Dodat novi artikal: 1
+[2025-07-21 23:43:36.278963] Dodat novi artikal: 1
+[2025-07-21 23:44:01.028861] Dodat novi artikal: 1
+[2025-07-21 23:44:29.008858] Dodat novi artikal: 1
+[2025-07-21 23:44:51.425000] Dodat novi artikal: 1
+[2025-07-21 23:45:21.224557] Dodat novi artikal: 1
+[2025-07-21 23:46:56.155256] Dodat novi artikal: 1
+[2025-07-21 23:56:07.778001] Kupljen artikal: 1
+[2025-07-21 23:56:12.720438] Kupljen artikal: 1
+[2025-07-21 23:56:32.511351] Ažurirani artikli preko admin panela.
+[2025-07-21 23:56:41.182925] Kupljen artikal: 1
+[2025-07-21 23:56:50.723508] Kupljen artikal: 1
+[2025-07-21 23:57:01.043314] Kupljen artikal: 1
+[2025-07-22 00:14:38.166753] Kupljen artikal: 1
+[2025-07-22 00:43:21.932888] Ažurirani artikli preko admin panela.
+[2025-07-22 01:35:01.468257] Obrisan artikal: Fanta
+[2025-07-22 01:36:17.980801] Dodat novi artikal: 1
+[2025-07-22 01:58:09.609176] Ažurirani artikli preko admin panela.
+[2025-07-22 01:59:02.285800] Ažurirani artikli preko admin panela.
+[2025-07-22 01:59:09.178244] Kupljen artikal: 1
+[2025-07-22 01:59:12.178297] Kupljen artikal: 1
+[2025-07-22 01:59:14.633268] Kupljen artikal: 1
+[2025-07-22 01:59:30.544905] Ažurirani artikli preko admin panela.
+[2025-07-22 01:59:46.425008] Kupljen artikal: 1
+[2025-07-22 09:01:35.734564] Dodat novi artikal: 1
+[2025-07-22 09:02:13.406524] Dodat novi artikal: 1
+[2025-07-22 09:03:42.617343] Obrisan artikal: 1
+[2025-07-22 09:03:46.748053] Obrisan artikal: 1
+[2025-07-22 09:58:23.156722] Ažurirani artikli preko admin panela.
+[2025-07-23 00:23:13.674753] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 00:23:15.596713] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 00:23:17.378274] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 00:23:23.523144] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 00:23:25.090417] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 00:23:26.683675] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 00:23:28.518051] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 00:23:29.447114] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 00:23:30.188701] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 00:23:30.513985] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 00:23:31.609818] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 00:23:32.294753] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 00:23:32.613602] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 00:23:33.888175] [SERVIS] Ručno dodata prodaja za slot 5 – Pivo  1
+[2025-07-23 00:23:38.275226] [SERVIS] Testiran motor za slot 5 – Pivo  1
+[2025-07-23 00:23:40.123001] [SERVIS] Ručno dodata prodaja za slot 5 – Pivo  1
+[2025-07-23 00:32:21.338751] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 00:32:23.075865] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 00:32:24.545806] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 00:32:27.030009] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:32:28.635161] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-23 00:32:30.821620] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 00:32:32.157752] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 00:32:34.039214] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 00:32:36.071399] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 00:32:37.135283] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 00:32:38.215131] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 00:32:39.381982] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 00:32:40.954711] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 00:32:42.471235] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 00:32:57.075390] Kupljen artikal: Fanta
+[2025-07-23 00:33:01.659444] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:33:04.073355] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:33:11.540098] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:33:17.022371] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-23 00:33:18.870764] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 00:33:20.828806] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 00:33:22.548629] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 00:33:24.433136] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 00:33:26.015905] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 00:33:33.251485] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 00:33:34.238413] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 00:33:46.205684] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 00:42:31.660613] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 00:42:33.221102] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 00:42:34.950493] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 00:42:36.595889] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 00:42:43.741269] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 00:42:45.939833] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 00:43:04.587349] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 00:43:06.057449] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 00:43:07.732485] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 00:43:08.683936] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 00:43:10.414843] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 00:43:11.181017] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 00:43:12.785931] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 00:43:13.931360] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 00:43:14.941875] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 00:43:17.717830] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 00:43:19.069164] [SERVIS] Testiran motor za slot 5 – Pivo  1
+[2025-07-23 00:43:21.149061] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 00:43:24.227125] [SERVIS] Ručno dodata prodaja za slot 5 – Pivo  1
+[2025-07-23 00:43:27.564065] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 00:43:28.940776] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 00:43:30.527787] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 00:43:31.546254] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 00:43:37.124565] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:43:38.914395] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:43:39.340646] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:43:39.697920] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:43:40.025003] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:43:40.349845] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:43:40.682448] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:43:41.041633] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:43:41.366677] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:43:41.698523] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 00:48:12.526500] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 01:03:37.325732] Kupljen artikal: Kola 1
+[2025-07-23 01:03:40.715815] Kupljen artikal: Kola 1
+[2025-07-23 01:03:52.900878] Ažurirani artikli preko admin panela.
+[2025-07-23 01:04:12.894882] Ažurirani artikli preko admin panela.
+[2025-07-23 01:04:15.269176] Ažurirani artikli preko admin panela.
+[2025-07-23 01:04:18.380615] Ažurirani artikli preko admin panela.
+[2025-07-23 01:04:26.886576] Ažurirani artikli preko admin panela.
+[2025-07-23 01:15:44.934488] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:15:46.168041] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:15:48.123344] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:15:49.722809] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:15:51.441765] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:15:53.180443] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:15:54.882882] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 01:15:56.565359] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 01:15:58.082285] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-23 01:15:59.425771] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 01:16:07.084227] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:18:23.264139] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:18:24.385417] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:18:25.690682] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:18:26.883325] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:18:27.747997] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:18:28.477334] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:18:29.302641] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:18:29.808509] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:18:30.674828] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:18:32.353465] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 01:18:33.447674] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 01:18:34.741437] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 01:18:35.709567] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 01:18:36.064583] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 01:18:36.830452] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 01:18:38.383448] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 01:20:54.468877] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:20:55.404215] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:20:56.749013] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:20:58.237549] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:20:59.678516] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:21:01.256087] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:21:02.186623] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:21:05.131190] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:21:06.524888] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:23:13.605813] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:23:14.688815] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:25:10.409414] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:25:11.026336] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:25:11.650497] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:25:12.709672] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:26:30.687103] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:26:31.817133] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:26:33.115042] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:26:34.893870] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:26:36.851693] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:26:38.015301] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:26:39.405687] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:26:40.810951] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:31:29.881256] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:31:31.983251] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:31:33.886288] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:31:35.030935] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:31:39.203793] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:31:40.722386] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:32:02.220354] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:32:03.349116] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:32:04.047969] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:32:04.936014] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 01:32:05.384398] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 01:32:06.076066] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 01:32:12.013269] Kupljen artikal: Fanta
+[2025-07-23 01:37:23.898907] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:37:25.891655] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:37:26.815641] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:37:27.770892] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:37:30.598639] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:37:31.584166] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:37:32.660817] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:37:36.550000] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:38:00.600168] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:38:03.184884] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:38:04.138974] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:41:03.088431] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:41:04.462120] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:41:05.657651] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:41:06.257612] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:41:07.912101] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:41:09.456505] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:41:10.837444] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:41:11.995718] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:41:12.961997] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:41:13.670232] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:41:14.149679] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:41:15.061919] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:41:15.720513] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:41:16.295744] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:41:16.680331] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:41:17.039399] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:41:17.664360] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:41:18.176067] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:41:18.559594] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:41:18.961727] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:41:19.407722] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:41:19.826460] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:41:21.088611] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:41:21.420093] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:41:26.999806] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:41:27.356039] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:41:27.712694] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:41:28.747780] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:41:29.175668] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:41:29.941758] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:41:30.305995] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:41:30.631653] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:41:31.107692] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 01:42:15.633955] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 01:43:37.205651] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:43:39.061855] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:43:39.347532] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:43:53.493632] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:43:54.321529] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:43:54.845462] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:43:55.215866] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:46:56.606563] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:46:57.771700] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:46:58.387386] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:46:58.696117] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:46:59.153153] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:47:03.759486] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:47:04.001386] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:47:05.959362] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:47:08.825326] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:47:09.109422] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:47:45.550157] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 01:54:11.863315] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 01:54:12.446973] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 01:54:12.780159] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 01:54:13.040918] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 01:54:13.870045] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:14.130970] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:14.405022] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:14.713312] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:16.585129] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:54:16.868945] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:54:17.344924] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 01:54:17.982265] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:54:18.258774] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:54:18.616714] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 01:54:19.445143] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 01:54:19.752895] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 01:54:20.024838] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 01:54:20.678224] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 01:54:21.005113] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 01:54:21.256695] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 01:54:22.035128] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-23 01:54:22.326916] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-23 01:54:22.632895] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-23 01:54:23.507159] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 01:54:23.782943] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 01:54:41.302674] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:41.866458] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 01:54:42.712945] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 01:54:42.965083] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 01:54:43.624987] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:43.874865] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:44.473675] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 01:54:44.734990] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 01:54:45.321960] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:45.569384] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:46.005814] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:46.560907] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 01:54:46.816942] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 01:54:47.114973] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 01:54:47.666961] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:47.907813] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:48.234961] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:48.490806] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 01:54:49.162851] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 01:54:49.402606] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 02:41:47.753026] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 02:41:48.738818] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 02:41:50.147311] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 02:41:50.840393] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 02:41:52.436396] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 02:41:53.008433] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 02:41:54.602426] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 02:41:55.328247] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:41:57.586292] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 02:41:58.205868] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 02:41:59.173331] [SERVIS] Ručno dodata prodaja za slot 5 – Pivo  1
+[2025-07-23 02:41:59.849401] [SERVIS] Testiran motor za slot 5 – Pivo  1
+[2025-07-23 02:42:02.340297] [SERVIS] Testiran motor za slot 5 – Pivo  1
+[2025-07-23 02:42:02.974167] [SERVIS] Ručno dodata prodaja za slot 5 – Pivo  1
+[2025-07-23 02:42:07.782227] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 02:42:08.473241] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 02:42:13.180177] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 02:42:14.112361] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 02:42:43.042505] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:42:44.234103] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 02:42:44.624950] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 02:42:44.912800] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 02:42:45.164641] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 02:42:45.740407] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:42:45.995066] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:42:46.258455] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:42:46.496177] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:42:46.714185] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:42:46.942249] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:42:47.230585] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:42:47.752400] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 02:42:48.003380] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 02:42:48.230549] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 02:42:48.446108] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 02:42:48.633494] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 02:42:48.838265] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 02:42:49.021125] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 02:42:49.966931] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 02:42:50.214334] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 02:42:50.392241] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 02:42:50.610113] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 02:42:50.829580] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 02:42:51.002263] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 02:42:51.094273] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 02:42:51.733302] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 02:42:51.946062] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 02:42:52.132366] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 02:42:52.330472] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 02:42:52.510605] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 02:42:52.660182] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 02:42:52.807246] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 02:43:25.242351] Ažurirani artikli preko admin panela.
+[2025-07-23 02:43:28.029446] Ažurirani artikli preko admin panela.
+[2025-07-23 02:44:14.698707] Ažurirani artikli preko admin panela.
+[2025-07-23 02:44:17.793189] Ažurirani artikli preko admin panela.
+[2025-07-23 02:47:00.354924] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 02:47:01.928118] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 02:47:04.257605] [SERVIS] Testiran motor za slot 4 – Pivo
+[2025-07-23 02:47:05.100260] [SERVIS] Ručno dodata prodaja za slot 4 – Pivo
+[2025-07-23 02:47:06.848015] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 02:47:08.387495] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 02:47:09.794672] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 02:47:10.703998] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 02:47:12.165789] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 02:47:12.624360] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 02:47:13.530202] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-23 02:47:14.002083] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 02:47:15.186339] [SERVIS] Testiran motor za slot 5 – Pivo  1
+[2025-07-23 02:47:15.603943] [SERVIS] Ručno dodata prodaja za slot 5 – Pivo  1
+[2025-07-23 02:47:16.370165] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 02:47:16.750347] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 02:48:05.048024] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:48:05.246055] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:48:05.448043] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:48:05.710293] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:48:05.939727] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 02:49:00.232579] Ažurirani artikli preko admin panela.
+[2025-07-23 02:49:07.341954] Ažurirani artikli preko admin panela.
+[2025-07-23 02:49:15.271664] Ažurirani artikli preko admin panela.
+[2025-07-23 02:49:23.303591] Ažurirani artikli preko admin panela.
+[2025-07-23 02:49:26.545844] Ažurirani artikli preko admin panela.
+[2025-07-23 02:49:33.016148] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 02:49:33.592536] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 02:49:34.210024] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 02:49:34.659868] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 02:49:36.750373] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 02:49:37.119937] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 02:49:37.759049] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 02:49:40.127957] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 02:49:40.719920] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 02:49:41.618024] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 02:50:14.913957] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 02:50:22.602047] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 02:50:30.463722] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-23 02:50:38.702126] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-23 02:50:49.196874] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 02:50:49.811852] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-23 18:30:06.222737] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 18:30:06.911252] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 18:30:07.691339] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 18:30:08.019099] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 18:30:08.561213] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 21:01:44.712939] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 21:01:47.363216] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 21:34:26.466386] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 21:36:51.086175] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 21:36:51.617872] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 21:36:51.842319] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 21:36:52.056599] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 21:36:52.289886] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 21:36:52.909866] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 21:36:53.148313] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 21:36:53.354175] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 21:36:53.524145] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 21:36:53.881821] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 21:36:54.338792] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 21:36:54.680432] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 21:36:55.003990] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 21:36:55.417850] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 21:36:56.080417] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 21:36:56.390042] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 21:36:57.408321] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 21:36:57.794653] [SERVIS] Ručno dodata prodaja za slot 6 – Kola 
+[2025-07-23 21:36:58.948081] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 21:36:59.304940] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-23 21:52:28.834590] Ažurirani artikli preko admin panela.
+[2025-07-23 21:52:29.165552] Ažurirani artikli preko admin panela.
+[2025-07-23 21:52:48.879585] Ažurirani artikli preko admin panela.
+[2025-07-23 22:00:55.992252] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-23 22:00:58.796361] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-23 22:06:25.810473] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 22:06:49.002823] [SERVIS] Testiran motor za slot 2 – 4 Soka
+[2025-07-23 22:06:50.407824] [SERVIS] Ručno dodata prodaja za slot 2 – 4 Soka
+[2025-07-23 22:06:54.758954] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 22:06:55.278863] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 22:06:55.855440] [SERVIS] Testiran motor za slot 7 – Kola 1
+[2025-07-23 22:06:56.636856] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 22:06:56.992062] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 22:06:57.360645] [SERVIS] Ručno dodata prodaja za slot 7 – Kola 1
+[2025-07-23 22:07:03.533553] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 22:07:04.184812] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 22:07:11.660829] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-23 22:07:13.300887] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-23 22:17:43.886489] [SERVIS] Testiran motor za slot 6 – Kola 
+[2025-07-24 21:10:21.892830] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-24 21:10:22.549774] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-24 21:10:23.108433] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-24 21:10:23.515546] [SERVIS] Ručno dodata prodaja za slot 3 – Cokko1
+[2025-07-24 22:01:06.621155] [SERVIS] Testiran motor za slot 3 – Cokko1
+[2025-07-24 22:01:41.102646] Ažurirani artikli preko admin panela.
+[2025-07-24 22:02:03.619949] Kupljen artikal: 4 Soka
+[2025-07-24 22:02:10.700072] Kupljen artikal: 4 Soka
+[2025-07-24 22:02:13.748119] Kupljen artikal: Cokko1
+[2025-07-24 22:17:24.461346] Kupljen artikal: Cokko1
+[2025-07-24 22:36:21.767828] Kupljen artikal: Cokolada
+[2025-07-24 22:36:24.176135] Kupljen artikal: Fanta
+[2025-07-24 22:37:03.614140] Kupljen artikal: Cokolada
+[2025-07-24 22:43:26.154688] Kupljen artikal: Fanta
+[2025-07-24 22:46:00.679665] Ažurirani artikli preko admin panela.
+[2025-07-24 22:46:24.189536] Ažurirani artikli preko admin panela.
+[2025-07-24 22:46:56.841155] Kupljen artikal: Fanta
+[2025-07-24 22:47:41.941927] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-24 22:47:45.116292] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-24 22:47:49.631535] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-24 22:47:50.299406] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-24 22:48:24.292685] Kupljen artikal: Fanta
+[2025-07-24 22:48:34.119327] Kupljen artikal: Pivo
+[2025-07-24 22:49:15.570056] Dodat novi artikal: 1
+[2025-07-24 22:49:31.888083] Obrisan artikal: 1
+[2025-07-24 22:50:47.833249] Ažurirani artikli preko admin panela.
+[2025-07-24 22:51:03.663043] Ažurirani artikli preko admin panela.
+[2025-07-24 22:51:12.695342] Ažurirani artikli preko admin panela.
+[2025-07-24 22:51:33.448643] Kupljen artikal: Pivo
+[2025-07-24 22:51:43.104452] Ažurirani artikli preko admin panela.
+[2025-07-24 22:51:46.609429] Ažurirani artikli preko admin panela.
+[2025-07-24 22:52:12.672904] Kupljen artikal: Pivo
+[2025-07-24 22:53:01.191139] Kupljen artikal: Cokolada
+[2025-07-24 22:54:27.723447] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-24 22:54:28.633142] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-24 23:40:38.190663] Kupljen artikal: Cokolada
+[2025-07-25 13:47:40.632906] Ažurirani artikli preko admin panela.
+[2025-07-25 14:09:37.230667] Kupljen artikal: Cokolada
+[2025-07-25 14:09:40.034816] Kupljen artikal: Cokolada
+[2025-07-25 14:09:47.324132] Kupljen artikal: Pivo
+[2025-07-25 17:46:31.216442] Ažurirani artikli preko admin panela.
+[2025-07-25 17:47:20.764169] Ažurirani artikli preko admin panela.
+[2025-07-26 23:08:08.641863] Kupljen artikal: Cokolada
+[2025-07-26 23:08:12.786838] Kupljen artikal: 4 Soka
+[2025-07-30 18:31:37.420843] Kupljen artikal: Fanta
+[2025-07-30 19:03:57.901205] Ažurirani artikli preko admin panela.
+[2025-07-30 19:13:04.457234] [SERVIS] Testiran motor za slot 1 – Cokolada
+[2025-07-30 19:13:07.132041] [SERVIS] Ručno dodata prodaja za slot 1 – Cokolada
+[2025-07-30 21:56:44.771485] Kupljen artikal: Pivo  1
+[2025-07-30 21:56:45.902354] Kupljen artikal: Pivo  1
+[2025-07-30 21:56:48.089705] Kupljen artikal: Fanta
+[2025-07-30 21:57:01.465898] Ažurirani artikli preko admin panela.
+[2025-07-30 21:57:05.104676] Ažurirani artikli preko admin panela.
+[2025-07-30 21:57:48.130910] Kupljen artikal: Fanta
+[2025-07-30 23:35:42.697493] Ažurirani artikli preko admin panela.
+[2025-07-31 14:00:06.740540] Ažurirani artikli preko admin panela.
+[2025-07-31 14:00:50.706507] Ažurirani artikli preko admin panela.
+[2025-07-31 14:01:24.017330] Ažurirani artikli preko admin panela.
+[2025-07-31 14:02:05.384820] Obrisan artikal: Kola 1
+[2025-07-31 14:02:41.250578] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-07-31 14:02:46.081217] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-31 14:02:47.445640] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-31 14:02:48.333794] [SERVIS] Ručno dodata prodaja za slot 0 – Fanta
+[2025-07-31 23:01:56.317049] Dodat novi artikal: 1
+[2025-07-31 23:02:00.934134] Ažurirani artikli preko admin panela.
+[2025-07-31 23:02:24.644072] Ažurirani artikli preko admin panela.
+[2025-08-01 21:14:14.848617] Ažurirani artikli preko admin panela.
+[2025-08-01 21:26:02.064127] Kupljen artikal: Cokolada
+[2025-08-02 10:25:53.801043] Kupljen artikal: Fanta
+[2025-08-02 10:26:34.364352] Kupljen artikal: Pivo
+[2025-08-02 10:26:41.519763] Kupljen artikal: Pivo
+[2025-08-02 10:27:17.118151] Ažurirani artikli preko admin panela.
+[2025-08-02 10:27:40.774760] Ažurirani artikli preko admin panela.
+[2025-08-02 10:28:22.951869] Kupljen artikal: Fanta
+[2025-08-02 10:28:46.954210] Ažurirani artikli preko admin panela.
+[2025-08-02 10:28:55.503053] Obrisan artikal: 1
+[2025-08-02 10:29:31.464227] [SERVIS] Testiran motor za slot 0 – Fanta
+[2025-08-02 10:32:22.528864] Kupljen artikal: Cokolada
+[2025-08-02 10:32:23.971728] Kupljen artikal: Cokolada
+[2025-08-02 10:32:25.902805] Kupljen artikal: Cokolada
+[2025-08-04 13:30:43.707223] Kupljen artikal: Pivo
+[2025-08-04 13:30:49.160335] Kupljen artikal: Pivo  1
+[2025-08-04 13:31:09.368757] Ažurirani artikli preko admin panela.

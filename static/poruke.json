@@ -1,0 +1,67 @@
+{
+  "početna": {
+    "sr": "Početna",
+    "de": "Startseite",
+    "en": "Home"
+  },
+  "dodaj": {
+    "sr": "Dodaj Artikal",
+    "de": "Artikel Hinzufügen",
+    "en": "Add Item"
+  },
+  "izvestaj": {
+    "sr": "Izveštaj",
+    "de": "Bericht",
+    "en": "Report"
+  },
+  "izaberi": {
+    "sr": "Izaberite artikal pritiskom na sliku",
+    "de": "Wählen Sie ein Produkt durch Klicken auf das Bild",
+    "en": "Select an item by clicking on the image"
+  },
+  "kupi": {
+    "sr": "Kupi",
+    "de": "Kaufen",
+    "en": "Buy"
+  },
+  "kupi18": {
+    "sr": "Kupi 18+",
+    "de": "Kaufen 18+",
+    "en": "Buy 18+"
+  },
+  "verifikacija_potrebna": {
+    "sr": "Potrebna je verifikacija punoletstva!",
+    "de": "Altersverifikation erforderlich!",
+    "en": "Age verification required!"
+  },
+  "verifikuj": {
+    "sr": "VERIFIKUJ",
+    "de": "VERIFIZIEREN",
+    "en": "VERIFY"
+  },
+  "nazad": {
+    "sr": "Nazad",
+    "de": "Zurück",
+    "en": "Back"
+  },
+  "nema": {
+    "sr": "Nema na stanju",
+    "de": "Nicht auf Lager",
+    "en": "Out of stock"
+  },
+  "stanje": {
+    "sr": "Stanje",
+    "de": "Lager",
+    "en": "Stock"
+  },
+  "uplata_uspesna": {
+    "sr": "Uplata uspešna. Uzmite vaš artikal. Hvala!",
+    "de": "Zahlung erfolgreich. Bitte entnehmen Sie den Artikel. Danke!",
+    "en": "Payment successful. Please take your item. Thank you!"
+  },
+  "uplata_neuspesna": {
+    "sr": "Uplata nije uspela. Pokušajte ponovo.",
+    "de": "Zahlung fehlgeschlagen. Bitte erneut versuchen.",
+    "en": "Payment failed. Please try again."
+  }
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SERVISNI PANEL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin-right: 220px;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 36px;
+            padding: 20px;
+        }
+
+        .slot {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 22px;
+            width: 280px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .slot img {
+            width: 72px;
+            height: 96px;
+            object-fit: contain;
+            margin-bottom: 12px;
+        }
+
+        .slot h3 {
+            margin: 6px 0 4px 0;
+            font-size: 20px;
+            color: #207ee9;
+        }
+
+        .slot .status {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tabela-stanja {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 8px 0 12px 0;
+            padding: 4px 10px;
+            background: #f0f4f8;
+            border-radius: 8px;
+        }
+
+        .kolona {
+            text-align: center;
+            width: 30%;
+        }
+
+        .kolona .labela {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 2px;
+            font-weight: bold;
+        }
+
+        .kolona .vrednost {
+            font-size: 15px;
+            font-weight: normal;
+            color: #222;
+        }
+
+        .kontrola-red {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            gap: 6px;
+            margin-bottom: 6px;
+        }
+
+        .dugme {
+            flex: 1;
+            padding: 8px 0;
+            font-size: 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn-plavo {
+            background: #2196f3;
+            color: white;
+        }
+
+        .btn-crveno {
+            background: #f44336;
+            color: white;
+        }
+
+        .btn-crveno.reset-animacija {
+            background-color: #ff1744 !important;
+            transition: background-color 0.3s;
+        }
+
+        .brojac {
+            width: 40px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #222;
+        }
+
+        .meni {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #f8f8f8;
+            border-left: 2px solid #ccc;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .meni a {
+            background: #1976d2;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .meni a:hover {
+            background: #125ca0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="meni">
+    <a href="/">Početna</a>
+    <a href="/admin">Admin</a>
+    <a href="/dodaj">Dodaj Artikal</a>
+    <a href="/izvestaj">Izveštaj</a>
+    <a href="/servis5">Servis</a>
+    <a href="/log">Log</a>
+    <a href="/rezerva">Rezervna</a>
+</div>
+
+<div class="grid">
+    {% for a in artikli %}
+    {% set stanje = a.zaduzeno - a.prodato %}
+    <div class="slot" style="opacity: {{ 1 if a.aktivan else 0.4 }}">
+        <img src="{{ url_for('static', filename='slike/' + a.slika) }}" onerror="this.src='{{ url_for('static', filename='slike/default.jpg') }}'">
+        <h3>{{ a.naziv }}</h3>
+
+        <div class="tabela-stanja">
+            <div class="kolona">
+                <div class="labela">Zaduženo</div>
+                <div class="vrednost">{{ a.zaduzeno }}</div>
+            </div>
+            <div class="kolona">
+                <div class="labela">Prodato</div>
+                <div class="vrednost">{{ a.prodato }}</div>
+            </div>
+            <div class="kolona">
+                <div class="labela">Stanje</div>
+                <div class="vrednost">{{ stanje }}</div>
+            </div>
+        </div>
+
+        <div class="status">{{ 'AKTIVAN' if a.aktivan else 'NEAKTIVAN' }}</div>
+
+        <div class="kontrola-red">
+            <button class="dugme btn-plavo" onclick="posaljiKomandu({{ loop.index0 }}, 'test', this)">Testiraj</button>
+            <span id="test{{ loop.index0 }}" class="brojac">0</span>
+            <button class="dugme btn-crveno" onclick="resetujSlot({{ loop.index0 }}, this)">Reset</button>
+        </div>
+
+        <div class="kontrola-red">
+            <button class="dugme btn-plavo" onclick="posaljiKomandu({{ loop.index0 }}, 'sim', this)">+1 Prodaja</button>
+            <span id="sim{{ loop.index0 }}" class="brojac">0</span>
+            <button class="dugme btn-crveno" onclick="resetujSlot({{ loop.index0 }}, this)">Reset</button>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<script>
+function posaljiKomandu(slotIndex, tip, dugme) {
+    const url = tip === 'test' ? `/testiraj/${slotIndex}` : `/dodaj_prodaju/${slotIndex}`;
+    fetch(url, { method: "POST" })
+        .then(res => {
+            if (res.ok) {
+                let span = document.getElementById(tip + slotIndex);
+                let broj = parseInt(span.textContent);
+                span.textContent = broj + 1;
+
+                dugme.classList.add('ok');
+                setTimeout(() => dugme.classList.remove('ok'), 600);
+            } else {
+                dugme.classList.add('err');
+                setTimeout(() => dugme.classList.remove('err'), 800);
+            }
+        })
+        .catch(() => {
+            dugme.classList.add('err');
+            setTimeout(() => dugme.classList.remove('err'), 800);
+        });
+}
+
+function resetujSlot(index, dugme) {
+    document.getElementById("test" + index).textContent = "0";
+    document.getElementById("sim" + index).textContent = "0";
+
+    dugme.classList.add("reset-animacija");
+    setTimeout(() => {
+        dugme.classList.remove("reset-animacija");
+    }, 600);
+}
+</script>
+
+</body>
+</html>

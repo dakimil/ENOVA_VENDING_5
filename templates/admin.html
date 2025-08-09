@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+    <title>ADMIN PANEL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            font-size: 110%;
+            margin-right: 220px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0 20px 0;
+            font-size: 26px;
+        }
+
+        .admin-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .slot-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .slot {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 10px #c4c4c4;
+            padding: 18px;
+            width: 278px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .slot img {
+            width: 68px;
+            height: 106px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .slot input[type="checkbox"] {
+            position: absolute;
+            top: 8px;
+        }
+
+        .slot .aktiv { left: 8px; }
+        .slot .plus18 { right: 8px; }
+
+        .row {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+
+        .row input[type="text"],
+        .row input[type="number"] {
+            width: 48%;
+            padding: 6px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #bcbcbc;
+        }
+
+        .dopuni-controls {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        .dopuni-controls button {
+            height: 32px;
+            font-size: 16px;
+            background: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            min-width: 46px;
+        }
+
+        .dopuni-controls input[type="number"] {
+            width: 42px;
+            padding: 4px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .slot button.sacuvaj {
+            width: 100%;
+            background: #2196f3;
+            color: #fff;
+            font-size: 17px;
+            padding: 8px 0;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 6px;
+        }
+
+        .slot button.sacuvaj:hover {
+            background: #1766a0;
+        }
+
+        .info {
+            margin-top: 7px;
+            font-size: 14px;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .btn-slika {
+            background: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            height: 32px;
+            font-size: 14px;
+            min-width: 46px;
+        }
+
+        /* Desni meni */
+        .side-menu {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #f8f8f8;
+            border-left: 2px solid #ccc;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .side-menu a {
+            background: #1976d2;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .side-menu a:hover {
+            background: #125ca0;
+        }
+    </style>
+</head>
+<body>
+    <h1>ADMIN PANEL</h1>
+
+    <div class="side-menu">
+        <a href="/">Početna</a>
+        <a href="/admin">Admin</a>
+        <a href="/dodaj">Dodaj Artikal</a>
+        <a href="/izvestaj">Izveštaj</a>
+        <a href="/servis5">Servis</a>
+        <a href="/log">Log</a>
+		<a href="/edit">🎨 Edit ekran</a>
+		<a href="/edit">🎨 Edit ekran1</a>
+		<a href="/edit">🎨 Edit ekran2</a>
+		
+    </div>
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="admin-grid">
+            {% for i in range(0, artikli|length, 4) %}
+            <div class="slot-row">
+                {% for j in range(i, i+4) %}
+                    {% if artikli|length > j %}
+                    {% set slot = artikli[j] %}
+                    <div class="slot">
+                        <input type="checkbox" name="aktivan{{j}}" {% if slot.aktivan %}checked{% endif %} class="aktiv">
+                        <input type="checkbox" name="plus18{{j}}" {% if slot.plus18 %}checked{% endif %} class="plus18">
+
+                        <img src="{{ url_for('static', filename='slike/' + slot.slika) }}" onerror="this.src='{{ url_for('static', filename='slike/default.jpg') }}'" alt="slika">
+
+                        <div class="row">
+                            <input type="text" name="naziv{{j}}" value="{{slot.naziv}}" placeholder="Naziv">
+                            <input type="number" step="0.01" name="cena{{j}}" value="{{slot.cena}}" placeholder="€">
+                        </div>
+
+                        <div class="dopuni-controls">
+                            <label for="slika{{j}}" class="btn-slika">SL</label>
+                            <input type="file" name="slika{{j}}" id="slika{{j}}">
+                            <button type="button" onclick="document.getElementById('dopuni{{j}}').stepDown()">–</button>
+                            <input type="number" id="dopuni{{j}}" name="dopuni{{j}}" value="0">
+                            <button type="button" onclick="document.getElementById('dopuni{{j}}').stepUp()">+</button>
+                        </div>
+
+                        <button type="submit" class="sacuvaj" name="sacuvaj" value="{{j}}">Sačuvaj</button>
+
+                        <div class="info">
+                            <div>Z: {{slot.zaduzeno}}</div>
+                            <div>P: {{slot.prodato}}</div>
+                            <div>S: {{slot.zaduzeno - slot.prodato}}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </form>
+</body>
+</html>

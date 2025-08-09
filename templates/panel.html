@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <title>SERVIS PANEL</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f6f8fa; text-align: center; }
+        h1 { margin: 34px 0 24px 0;}
+        .grid { 
+            display: flex; flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 34px 32px; 
+            max-width: 1100px; 
+            margin: 0 auto; 
+        }
+        .slot { 
+            background: #fff; border-radius: 16px; 
+            box-shadow: 2px 2px 9px #eee; 
+            padding: 18px 10px 15px 10px; 
+            min-width: 215px; max-width: 215px;
+            min-height: 295px; margin-bottom: 10px; 
+            position: relative; 
+            display: flex; flex-direction: column; align-items: center;
+        }
+        .slot img { width: 60px; height: 80px; margin-bottom: 10px; border-radius: 8px; background: #eee;}
+        .slot .naziv { font-size: 20px; font-weight: bold; color:#2877b7; margin-bottom:3px;}
+        .slot .cena { color: green; margin-bottom: 4px; font-size:18px;}
+        .info { margin-top: 5px; font-size:14px;}
+        .green { color: green; font-weight: bold;}
+        .sivi-slot { filter: grayscale(1); opacity: 0.5;}
+        @media (max-width: 1100px) {
+            .grid { max-width: 98vw;}
+            .slot { min-width: 170px; max-width: 170px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>SERVIS PANEL (2 reda × 4 slota)</h1>
+    <div class="grid">
+        {% for artikal in artikli %}
+        <div class="slot {% if not artikal.aktivan %}sivi-slot{% endif %}">
+            {% if artikal.slika %}
+                <img src="{{ url_for('static', filename='slike/' + artikal.slika) }}" alt="">
+            {% else %}
+                <img src="{{ url_for('static', filename='slike/noimg.png') }}" alt="">
+            {% endif %}
+            <div class="naziv">Slot {{ loop.index }}</div>
+            <div class="naziv">{{ artikal.naziv }}</div>
+            <div class="cena">{{ "%.2f"|format(artikal.cena) }} €</div>
+            <div class="info">Zaduženo: {{ artikal.zaduzeno }} | Prodato: {{ artikal.prodato }}</div>
+            <div class="green">Stanje: {{ artikal.stanje }}</div>
+            <div style="margin-top:5px; color:#444; font-size:15px;">
+                {% if artikal.aktivan %}<b>Aktivan</b>{% else %}<b>Neaktivan</b>{% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <br>
+    <a href="{{ url_for('admin') }}" style="font-size:17px; color:#2691ff;">&#8592; Nazad na Admin Panel</a>
+</body>
+</html>

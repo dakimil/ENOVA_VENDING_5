@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dodaj novi slot</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-right: 220px;
+        }
+
+        .kartica, .brisanje {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 10px #c4c4c4;
+            padding: 22px;
+            width: 300px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 14px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="number"], input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #bbb;
+        }
+
+        button {
+            margin-top: 18px;
+            width: 100%;
+            background: #1976d2;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #125ca0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #f0f0f0;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .brisanje-form button {
+            background: #e53935;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .brisanje-form button:hover {
+            background: #c62828;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Meni panel */
+        .meni {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #f8f8f8;
+            border-left: 2px solid #ccc;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .meni a {
+            background: #1976d2;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            display: block;
+        }
+
+        .meni a:hover {
+            background: #125ca0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Meni panel -->
+<div class="meni">
+    <a href="/">Početna</a>
+    <a href="/admin">Admin</a>
+    <a href="/dodaj">Dodaj Artikal</a>
+    <a href="/izvestaj">Izveštaj</a>
+    <a href="/servis5">Servis</a>
+    <a href="/log">Log</a>
+    <a href="/rezerva">Rezervna</a>
+</div>
+
+<!-- Forma za novi slot -->
+<div class="kartica">
+    <h2>Dodaj novi slot</h2>
+    <form method="post" enctype="multipart/form-data">
+        <label>Naziv:</label>
+        <input type="text" name="naziv" required>
+
+        <label>Cena (€):</label>
+        <input type="number" step="0.01" name="cena" required>
+
+        <label>Količina:</label>
+        <input type="number" name="zaduzeno" required>
+
+        <label>Slika:</label>
+        <input type="file" name="slika" required>
+
+        <label><input type="checkbox" name="plus18"> Verifikacija 18+</label>
+
+        <button type="submit">Dodaj artikal</button>
+    </form>
+
+    <div class="footer">
+        Poslednja izmena: {{ vreme.strftime('%H:%M') }}
+    </div>
+</div>
+
+<!-- Tabela brisanje -->
+<div class="brisanje">
+    <h2>Brisanje slotova</h2>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Naziv</th>
+            <th>Brisanje</th>
+        </tr>
+        {% for artikal in artikli %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ artikal.naziv }}</td>
+            <td>
+                <form method="post" class="brisanje-form">
+                    <input type="hidden" name="brisanje" value="{{ loop.index0 }}">
+                    <button type="submit">Obriši</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+</body>
+</html>

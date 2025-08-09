@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>REZERVNA STRANA – Glavni vlasnik</title>
+    <style>
+        body { margin-right: 220px; font-family: Arial; }
+        table { border-collapse: collapse; margin-top: 20px; width: 100%; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        .tajna { background-color: #fff3cd; padding: 10px; border: 1px dashed #aaa; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<!-- Desni meni -->
+<div style="position: fixed; right: 0; top: 0; width: 200px; height: 100%; background-color: #f8f8f8; border-left: 2px solid #ccc; padding: 20px;">
+  <h3>MENI</h3>
+  <ul style="list-style: none; padding: 0;">
+    <li><a href="/">Početna</a></li>
+    <li><a href="/admin">Admin</a></li>
+    <li><a href="/dodaj">Dodaj artikal</a></li>
+    <li><a href="/izvestaj">Izveštaj</a></li>
+    <li><a href="/servis5">Servisni panel</a></li>
+    <li><a href="/log">Log aktivnosti</a></li>
+    <li><a href="/rezerva">Rezervna strana</a></li>
+  </ul>
+</div>
+
+<h1>REZERVNA STRANA</h1>
+<h3>Samo za glavnog vlasnika</h3>
+
+<div class="tajna">
+  <p><strong>Pristupne informacije:</strong> Ovde možeš prikazivati podatke kao što su:</p>
+  <ul>
+    <li>Ukupan broj artikala u sistemu</li>
+    <li>Broj aktivnih i neaktivnih</li>
+    <li>Lista artikala koji su pri kraju zaliha</li>
+    <li>Prikaz tajnih poruka ili dodatne funkcije</li>
+  </ul>
+</div>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Naziv</th>
+        <th>Aktivan</th>
+        <th>Stanje</th>
+        <th>Prodato</th>
+        <th>Prihod (€)</th>
+    </tr>
+    {% for a in artikli %}
+    <tr {% if a.zaduzeno - a.prodato <= 1 %} style="background-color: #ffdddd;" {% endif %}>
+        <td>{{ loop.index }}</td>
+        <td>{{ a.naziv }}</td>
+        <td>{{ "DA" if a.aktivan else "NE" }}</td>
+        <td>{{ a.zaduzeno - a.prodato }}</td>
+        <td>{{ a.prodato }}</td>
+        <td>{{ "%.2f"|format(a.prodato * a.cena) }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<div class="tajna">
+    <p>⚙️ Ova stranica može kasnije imati i kontrole za:</p>
+    <ul>
+        <li>Dodavanje skrivenih komandi</li>
+        <li>Napredno filtriranje artikala</li>
+        <li>Prikaz internog statusa sistema</li>
+    </ul>
+</div>
+
+</body>
+</html>

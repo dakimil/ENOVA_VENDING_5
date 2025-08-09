@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>ENOVA Statistika</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial; background: #f7fafd; }
+        .logo { display:block; margin:0 auto 6px auto; height: 48px;}
+        .nav {text-align:right;margin:10px 22px;}
+        .nav a {margin-left:18px; color:#207ee9; font-size:17px; text-decoration:none;}
+        .nav a:hover {text-decoration:underline;}
+        h2 {text-align:center;}
+        #graf {max-width:700px;margin:40px auto 0 auto; background:#fff; padding:26px 16px 18px 16px; border-radius:20px; box-shadow:2px 2px 8px #d4d4d4;}
+    </style>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="ENOVA Logo" class="logo">
+    <div class="nav">
+        <a href="/admin">&larr; Nazad na admin panel</a>
+        <a href="/">Glavna strana</a>
+    </div>
+    <h2>Statistika prodaje</h2>
+    <div id="graf">
+        <canvas id="statChart" width="680" height="270"></canvas>
+    </div>
+    <script>
+        var ctx = document.getElementById('statChart').getContext('2d');
+        var statChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: {{ slot_nazivi|tojson }},
+                datasets: [{
+                    label: 'Prodato komada',
+                    data: {{ prodato|tojson }},
+                    borderWidth: 1,
+                    backgroundColor: "#1198f8",
+                    borderColor: "#1262b1"
+                }]
+            },
+            options: {
+                scales: { y: { beginAtZero: true, ticks:{ stepSize:1 }}},
+                plugins: { legend:{display:false} }
+            }
+        });
+    </script>
+</body>
+</html>

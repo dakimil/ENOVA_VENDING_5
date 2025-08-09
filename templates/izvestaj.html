@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Izveštaj o prodaji</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 40px;
+            margin-right: 220px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 30px;
+            font-size: 26px;
+        }
+
+        table {
+            width: 680px;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 14px 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #1976d2;
+            color: white;
+            font-size: 17px;
+        }
+
+        tr:hover {
+            background-color: #f1f7ff;
+        }
+
+        .ukupno {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #222;
+        }
+
+        /* Desni meni */
+        .meni {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #f8f8f8;
+            border-left: 2px solid #ccc;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .meni a {
+            background: #1976d2;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .meni a:hover {
+            background: #125ca0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="meni">
+    <a href="/">Početna</a>
+    <a href="/admin">Admin</a>
+    <a href="/dodaj">Dodaj Artikal</a>
+    <a href="/izvestaj">Izveštaj</a>
+    <a href="/servis5">Servis</a>
+    <a href="/log">Log</a>
+    <a href="/rezerva">Rezervna</a>
+</div>
+
+<h1>Izveštaj o prodaji</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Naziv</th>
+            <th>Cena (€)</th>
+            <th>Prodato</th>
+            <th>Prihod (€)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for a in artikli %}
+        <tr>
+            <td>{{ a.naziv }}</td>
+            <td>{{ "%.2f"|format(a.cena) }}</td>
+            <td>{{ a.prodato }}</td>
+            <td>{{ "%.2f"|format(a.prodato * a.cena) }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div class="ukupno">
+    Ukupan prihod: {{ "%.2f"|format(ukupno_prihod) }} €
+</div>
+
+</body>
+</html>
