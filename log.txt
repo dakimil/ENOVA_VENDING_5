@@ -636,3 +636,21 @@
 [2025-08-04 13:30:43.707223] Kupljen artikal: Pivo
 [2025-08-04 13:30:49.160335] Kupljen artikal: Pivo  1
 [2025-08-04 13:31:09.368757] Ažurirani artikli preko admin panela.
+[2025-08-11 17:34:43.667802] Ažurirani artikli preko admin panela.
+[2025-08-11 17:34:53.693074] Kupljen artikal: 4 Soka
+[2025-08-11 17:59:13.660352] Kupljen artikal: 4 Soka
+[2025-08-11 17:59:16.194547] Kupljen artikal: Cokko1
+[2025-08-11 17:59:18.146747] Kupljen artikal: Pivo
+[2025-08-13 17:23:13.946562] Kupljen artikal: 4 Soka
+[2025-08-13 17:39:08.844217] Kupljen artikal: Cokko1
+[2025-08-13 17:52:03.091590] Ažurirani artikli preko admin panela.
+[2025-08-13 17:52:07.425539] Kupljen artikal: Fanta
+[2025-08-13 17:57:20.826562] Ažurirani artikli preko admin panela.
+[2025-08-13 18:29:55.732073] Kupljen artikal: Fanta
+[2025-08-14 17:53:29.558104] Kupljen artikal: 4 Soka
+[2025-08-14 17:54:38.470036] Kupljen artikal: Fanta
+[2025-08-14 17:54:44.204596] Kupljen artikal: Fanta
+[2025-08-14 17:54:52.641362] Kupljen artikal: Fanta
+[2025-08-14 17:55:19.617616] Kupljen artikal: Fanta
+[2025-08-14 17:58:10.292267] Kupljen artikal: Fanta
+[2025-08-15 18:53:30.266385] Kupljen artikal: Kola 

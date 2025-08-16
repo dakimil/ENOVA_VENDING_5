@@ -2,11 +2,11 @@
     {
         "naziv": "Fanta",
         "cena": 1.0,
-        "zaduzeno": 49,
-        "prodato": 43,
+        "zaduzeno": 59,
+        "prodato": 50,
         "slika": "slot0.webp",
         "aktivan": true,
-        "plus18": false
+        "plus18": true
     },
     {
         "naziv": "Cokolada",
@@ -21,7 +21,7 @@
         "naziv": "4 Soka",
         "cena": 1.0,
         "zaduzeno": 54,
-        "prodato": 49,
+        "prodato": 53,
         "slika": "slot2.jpg",
         "aktivan": true,
         "plus18": false
@@ -30,7 +30,7 @@
         "naziv": "Cokko1",
         "cena": 1.0,
         "zaduzeno": 50,
-        "prodato": 42,
+        "prodato": 44,
         "slika": "slot3.jpg",
         "aktivan": true,
         "plus18": false
@@ -39,7 +39,7 @@
         "naziv": "Pivo",
         "cena": 1.0,
         "zaduzeno": 39,
-        "prodato": 30,
+        "prodato": 31,
         "slika": "slot4.jpg",
         "aktivan": true,
         "plus18": false
@@ -57,7 +57,7 @@
         "naziv": "Kola ",
         "cena": 1.0,
         "zaduzeno": 28,
-        "prodato": 26,
+        "prodato": 27,
         "slika": "slot6.webp",
         "aktivan": true,
         "plus18": false

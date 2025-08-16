@@ -1,10 +1,11 @@
+import subprocess
 from flask import Flask, render_template, request, redirect, url_for, send_file, session, flash, jsonify
 import json, os
 from werkzeug.security import generate_password_hash, check_password_hash
 import webbrowser
 import threading
 from functools import wraps
-from datetime import datetime
+from datetime import datetime, time
 
 app = Flask(__name__)
 app.secret_key = "enova2025"
@@ -41,6 +42,7 @@ def ucitaj_artikle():
             a['plus18'] = False
     return artikli
 
+
 # Funkcija za učitavanje poruka (prema jeziku iz sesije)
 def ucitaj_poruke(jezik):
     # Ako fajl ne postoji, vrati praznu listu
@@ -53,22 +55,25 @@ def ucitaj_poruke(jezik):
             sve_poruke = json.load(f)
         # Pronalazi poruku prema jeziku
         return {
-            k: v.get(jezik, v.get('sr', '')) 
+            k: v.get(jezik, v.get('sr', ''))
             for k, v in sve_poruke.items()
         }
     except Exception as e:
         print(f"Greška pri učitavanju poruka: {e}")
         return {}
 
+
 # Funkcija za čuvanje artikala
 def sacuvaj_artikle(artikli):
     with open(ARTIKLI_FAJL, 'w', encoding='utf-8') as f:
         json.dump(artikli, f, indent=4, ensure_ascii=False)
 
+
 # Funkcija za logovanje
 def loguj(tekst):
     with open(LOG_FAJL, 'a', encoding='utf-8') as f:
         f.write(f"[{datetime.now()}] {tekst}\n")
+
 
 # Populiše index strnicu
 @app.route('/')
@@ -83,11 +88,13 @@ def index():
     poruka_audio = f"static/audio/{audio_kljuc}_{jezik}.mp3"
     # Renderuje stranicu
     return render_template('index.html', artikli=artikli, poruke=poruke, poruka_audio=poruka_audio)
-    
+
+
 # Stranica za uređivanje
 @app.route("/edit")
 def edit():
     return render_template("edit.html")
+
 
 def login_required(f):
     @wraps(f)
@@ -96,7 +103,9 @@ def login_required(f):
         if not request.headers.get('Authorization'):
             return jsonify({"message": "Unauthorized"}), 401
         return f(*args, **kwargs)
+
     return decorated_function
+
 
 @app.route('/')
 def home():
@@ -113,10 +122,12 @@ def home():
     </html>
     """
 
+
 # login stranica
 @app.route('/login', methods=['GET'])
 def login_page():
     return render_template('login.html')
+
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -140,6 +151,7 @@ def login():
     else:
         return jsonify({"message": "Invalid username or password"}), 401
 
+
 @app.route('/dashboard')
 def dashboard():
     return """
@@ -156,6 +168,7 @@ def dashboard():
     </html>
     """
 
+
 # Funkcija za postavljanje jezika
 @app.route("/lang/<jezik>", methods=["POST"])
 def postavi_jezik(jezik):
@@ -163,6 +176,7 @@ def postavi_jezik(jezik):
         session['lang'] = jezik
         flash("Jezik promenjen.")
     return redirect(request.referrer or url_for('index'))
+
 
 # Stranica za admina
 @app.route('/admin', methods=['GET', 'POST'])
@@ -209,6 +223,7 @@ def admin():
         return redirect(url_for('admin'))
     return render_template('admin.html', artikli=artikli)
 
+
 # Bavi se dodavanjem novih artikala
 @app.route('/dodaj', methods=['GET', 'POST'])
 def dodaj():
@@ -252,6 +267,7 @@ def dodaj():
 
     return render_template("dodaj.html", artikli=artikli, vreme=datetime.now())
 
+
 # Bavi se zahtevima za kupovinu
 @app.route('/kupi/<int:slot>', methods=['POST'])
 def kupi(slot):
@@ -266,17 +282,111 @@ def kupi(slot):
             loguj(f"Kupljen artikal: {artikli[slot]['naziv']}")
     return redirect(url_for('index'))
 
-@app.route("/verifikuj", methods=['POST'])
-def verifikuj():
-    session['verifikovan'] = True
-    flash("Verifikacija uspešna. Možete nastaviti kupovinu.")
-    return redirect(url_for('index'))
+
+# @app.route("/verifikuj", methods=['POST'])
+# def verifikuj():
+# session['verifikovan'] = True
+# flash("Verifikacija uspešna. Možete nastaviti kupovinu.")
+# return redirect(url_for('index'))
+
+@app.route("/verifikuj_automatski", methods=["POST"])
+def verifikuj_automatski():
+    # Lokacije exe i json fajla
+    bas_celik_exe = r"F:\Daki\GitHub\ENOVA_VENDING_5\bas-celic\bas-celik.exe"
+    output_json_path = r"F:\Daki\GitHub\ENOVA_VENDING_5\licna_karta.json"
+    print("usao u verifikaciju")
+    try:
+        print("[AUTO-VERIF] Start:", bas_celik_exe, "-json", output_json_path, flush=True)
+
+        # Pokreni Baš Čelik sa JSON izlazom
+        rezultat = subprocess.run(
+            [bas_celik_exe, "-json", output_json_path],
+            timeout=20
+        )
+        print("[AUTO-VERIF] Return code:", rezultat.returncode, flush=True)
+
+        if rezultat.returncode != 0:
+            flash("Baš Čelik nije završio uspešno (return code != 0). Proveri putanju i čitač.")
+            return redirect(url_for('index'))
+
+        # Sačekaj da fajl bude upisan
+        #time.sleep(0.7)
+
+        if not os.path.exists(output_json_path):
+            flash("JSON fajl nije napravljen. Je l’ kartica ubodena i čitač vidi karticu?")
+            print("nije okej")
+            return redirect(url_for('index'))
+
+        with open(output_json_path, "r", encoding="utf-8") as f:
+            podaci = json.load(f)
+
+        # Uzimanje datuma rođenja
+        datum_rodjenja = (
+                podaci.get("DatumRodjenja")
+                or podaci.get("date_of_birth")
+                or podaci.get("BirthDate")
+                or podaci.get("DateOfBirth")
+        )
+        jmbg = podaci.get("JMBG") or podaci.get("jmbg")
+
+        if not datum_rodjenja and jmbg:
+            try:
+                dan = int(jmbg[0:2])
+                mesec = int(jmbg[2:4])
+                ggg = int(jmbg[4:7])
+                godina = 1000 + ggg if ggg >= 900 else 2000 + ggg
+                datum_rodjenja = f"{godina:04d}-{mesec:02d}-{dan:02d}"
+            except Exception:
+                datum_rodjenja = None
+
+        if not datum_rodjenja:
+            flash("Ne mogu da pročitam datum rođenja iz kartice/JSON-a.")
+            return redirect(url_for('index'))
+
+        try:
+            dr = datetime.strptime(datum_rodjenja, "%d.%m.%Y.")
+            print("uspeo")
+        except Exception:
+            flash(f"Neispravan format datuma: {datum_rodjenja}")
+            return redirect(url_for('index'))
+
+        danas = datetime.now()
+        godine = danas.year - dr.year - ((danas.month, danas.day) < (dr.month, dr.day))
+        print(f"[AUTO-VERIF] DOB={datum_rodjenja}  godine={godine}", flush=True)
+
+        if godine >= 18:
+            session['verifikovan'] = True
+            flash("Verifikacija uspešna! Punoletni ste.")
+            print("uspeo")
+        else:
+            session['verifikovan'] = False
+            flash("Niste punoletni! Kupovina nije dozvoljena.")
+            print("nije uspeo")
+
+        try:
+            os.remove(output_json_path)
+        except:
+            pass
+
+        return redirect(url_for('index'))
+
+    except subprocess.TimeoutExpired:
+        flash("Baš Čelik je prekoračio vreme (timeout). Pokušaj ponovo.")
+        return redirect(url_for('index'))
+    except FileNotFoundError:
+        flash("Putanja do bas-celik.exe nije tačna. Proveri folder i naziv datoteke.")
+        return redirect(url_for('index'))
+    except Exception as e:
+        flash(f"Greška pri verifikaciji: {e}")
+        return redirect(url_for('index'))
+
 
 @app.route("/izvestaj")
 def izvestaj():
     artikli = ucitaj_artikle()
     ukupno_prihod = sum(a['prodato'] * a['cena'] for a in artikli)
     return render_template("izvestaj.html", artikli=artikli, ukupno_prihod=ukupno_prihod)
+
 
 @app.route("/log")
 def prikaz_log():
@@ -286,6 +396,7 @@ def prikaz_log():
     else:
         sadrzaj = "Log fajl je prazan."
     return render_template("log.html", sadrzaj=sadrzaj)
+
 
 @app.route("/export_excel")
 def export_excel():
@@ -297,12 +408,14 @@ def export_excel():
     loguj("Izvezen Excel fajl.")
     return send_file(file_path, as_attachment=True)
 
+
 # Novi deo za servis panel i testiranja
 
 @app.route("/servis5")
 def servis():
     artikli = ucitaj_artikle()
     return render_template("servis5.html", artikli=artikli)
+
 
 @app.route("/testiraj/<int:slot>", methods=["POST"])
 def testiraj_motor(slot):
@@ -312,6 +425,7 @@ def testiraj_motor(slot):
         loguj(f"[SERVIS] Testiran motor za slot {slot} – {naziv}")
     return redirect(url_for('servis'))
 
+
 @app.route("/dodaj_prodaju/<int:slot>", methods=["POST"])
 def dodaj_prodaju(slot):
     artikli = ucitaj_artikle()
@@ -320,6 +434,7 @@ def dodaj_prodaju(slot):
         sacuvaj_artikle(artikli)
         loguj(f"[SERVIS] Ručno dodata prodaja za slot {slot} – {artikli[slot]['naziv']}")
     return redirect(url_for('servis'))
+
 
 @app.route("/sacuvaj_edit", methods=["POST"])
 def sacuvaj_edit():
@@ -331,12 +446,16 @@ def sacuvaj_edit():
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
 
+
 import webbrowser
 import threading
+
 
 def open_browser():
     webbrowser.open_new("http://127.0.0.1:5000")
 
+
 if __name__ == '__main__':
+    print("poceo")
     threading.Timer(1.0, open_browser).start()
     app.run(debug=False)
